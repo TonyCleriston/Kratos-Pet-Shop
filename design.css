@@ -1,0 +1,78 @@
+body {
+    margin:0;
+}
+
+nav {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(209, 209, 209);
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+ 
+.botoes {
+    width: 150px;
+    height: 50px; 
+    margin-right: 60px;
+    border-top: 1px solid rgb(81, 81, 82);
+    border-left: 1px solid rgb(81, 81, 82);
+    border-right:1px solid rgb(81, 81, 82) ;
+    border-radius: 10px;
+    padding: 0.3%;
+    
+}
+
+a {
+    width: 10px;
+    position: absolute;
+    height: 10px;
+    bottom: 555px;
+    margin-left: 23px;
+}
+
+#aba-tarefa {
+    width: 5%;
+    
+}
+
+option {
+  
+}
+
+form {
+    background-color: rgb(180, 180, 180);
+   
+ position: absolute;
+    height: 1000px;
+    width: 100%;
+    
+}
+
+.Titulo {
+    width: 900px;
+    margin-left:20%;
+    font-size: 100px;
+    margin-top: 3%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#inf {
+    outline: none;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #e1e1e1;
+    
+    background-color: transparent;
+ 
+    
+}
+.linha {
+   
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kratos Pet Shop</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <nav>
+     <div class="botoes">
+        <img src="pawprint.png">
+        <a>Cadastrar</a>
+     </div>
+     <div class="botoes">
+        <img src="caminhao-bau.png">
+        <a>Estoque</a>
+     </div>
+     <div class="botoes">
+        <img src="group.png">
+        <a>Clientes</a>
+     </div>
+     <div class="botoes"> 
+        <img src="clock.png">
+        <a>Horarios</a>
+     </div>
+    </nav>
+        <form>
+            <div class="linha">
+            <div class="Titulo">Cadastro de Usuario</div>
+        </div>
+        <div class="linha">
+            <label for="nome">Nome do animal:</label>
+            <input type="text" placeholder="Insira o nome do animal" name="nome" id="inf">
+        </div>
+            <br>
+            <div class="linha">
+            <label for="text">Tutor:</label>
+            <input type="text" placeholder="Insira o nome do tutor" name="nomeanimal" id="inf">
+            </div>
+            <br>
+            <div class="linha"></div>
+            <label for="text">Raça:</label>
+            <input type="text" placeholder="Insira a raça do seu animal" name="nomeanimal" id="inf">
+            </div>
+            <br>
+            <label for="tarefa">Selecione o porte:</label>
+            <br>
+            <input name="tarefa" type="radio" value="Porte-Pequeno"> Animal de porte pequeno
+            <input name="tarefa" type="radio" value="Porte-Médio"> Animal de porte médio
+            <input name="tarefa" type="radio" value="Porte-Grande"> Animal de porte grande
+            <br>
+            <label for="contato">Contato</label>
+            <input name="contato" list="aba-contato" placeholder="clique e selecione">
+            <datalist id="aba-contato">
+                <option value="DDD+ (75) ">
+                <option value="DDD+ (71) ">
+                <option value="DDD+ (73) ">
+                <option value="DDD+ (77) ">
+                <option value="DDD+ (11) ">
+                <option value="DDD+ (86) ">
+                <option value="DDD+ (89) ">
+                <option value="DDD+ (68) ">
+                <option value="DDD+ (62) ">
+                <option value="DDD+ (64) ">
+            </datalist>   
+            <br>
+            <label for="tarefa">Selecione o Serviço</label>
+            <select id="aba-tarefa">
+                <option value="T">Tosa</option>
+                <option value="B">Banho</option>
+                <option value="TB">Tosa e Banho</option>
+                <option value="TH">Tosa Higienica</option>
+                </select> 
+            <input type="submit" value="Enviar">
+        </form>
+</body>
+</html>
+
