@@ -10,49 +10,61 @@
 <body>
     <nav>
      <div class="botoes">
-        <img src="pawprint.png">
+        <img src="pawprint.png" id="bt">
         <a>Cadastrar</a>
      </div>
      <div class="botoes">
-        <img src="caminhao-bau.png">
+        <img src="caminhao-bau.png" id="bt">
         <a>Estoque</a>
      </div>
      <div class="botoes">
-        <img src="group.png">
+        <img src="group.png" id="bt">
         <a>Clientes</a>
      </div>
      <div class="botoes"> 
-        <img src="clock.png">
+        <img src="clock.png" id="bt">
         <a>Horarios</a>
      </div>
     </nav>
         <form>
-            <div class="linha">
+            <div class="">
             <div class="Titulo">Cadastro de Usuario</div>
         </div>
-        <div class="linha">
-            <label for="nome">Nome do animal:</label>
+       <div class="form">
+        <div class="caixa">
+             <div>
+                <img src="yeah.png" id="yeah">
+             </div>
+        <div class="linha1">
+            <label for="nome"><strong>Nome do animal:</strong></label>
             <input type="text" placeholder="Insira o nome do animal" name="nome" id="inf">
         </div>
             <br>
             <div class="linha">
-            <label for="text">Tutor:</label>
-            <input type="text" placeholder="Insira o nome do tutor" name="nomeanimal" id="inf">
+            <label for="text"><strong>Tutor:</strong></label>
+            <input type="text" placeholder="Insira o nome do tutor" name="nomeanimal" id="inf1">
             </div>
             <br>
-            <div class="linha"></div>
-            <label for="text">Raça:</label>
-            <input type="text" placeholder="Insira a raça do seu animal" name="nomeanimal" id="inf">
+            <div class="linha">
+            <label for="text"><strong>Raça:</strong></label>
+            <input type="text" placeholder="Insira a raça do seu animal" name="nomeanimal" id="inf1">
             </div>
             <br>
-            <label for="tarefa">Selecione o porte:</label>
+            <label for="tarefa" id="porte"><strong>Selecione o porte:</strong></label>
             <br>
-            <input name="tarefa" type="radio" value="Porte-Pequeno"> Animal de porte pequeno
-            <input name="tarefa" type="radio" value="Porte-Médio"> Animal de porte médio
-            <input name="tarefa" type="radio" value="Porte-Grande"> Animal de porte grande
+            <div class="op">
+                <input type="radio"  name="porte" value="grande">
+                <label for="grande"><strong>Animal de Grande Porte</strong></label><br>
+                <input type="radio"  name="porte" value="medio">
+                <label for="medio"><strong>Animal de Porte Médio</strong></label><br>
+                <input type="radio"  name="porte" value="pequeno">
+                <label for="pequeno"><strong>Animal de Pequeno Porte</strong></label>
+        </div>
             <br>
-            <label for="contato">Contato</label>
-            <input name="contato" list="aba-contato" placeholder="clique e selecione">
+            <div class="contato">
+            <label for="contato" id="cont"><strong>Contato:</strong></label>
+            <input name="contato" list="aba-contato" id="holder" placeholder="Selecione Seu DDD">
+
             <datalist id="aba-contato">
                 <option value="DDD+ (75) ">
                 <option value="DDD+ (71) ">
@@ -64,16 +76,22 @@
                 <option value="DDD+ (68) ">
                 <option value="DDD+ (62) ">
                 <option value="DDD+ (64) ">
-            </datalist>   
+            </datalist>  
+        </div> 
             <br>
-            <label for="tarefa">Selecione o Serviço</label>
+            <div class="ponto">
+            <label for="tarefa" id="serv"><strong>Serviço:</strong></label>
             <select id="aba-tarefa">
+                <option value="T" selected disabled>Selecione o Serviço</option>
                 <option value="T">Tosa</option>
                 <option value="B">Banho</option>
                 <option value="TB">Tosa e Banho</option>
                 <option value="TH">Tosa Higienica</option>
-                </select> 
-            <input type="submit" value="Enviar">
+                </select>
+            </div> <br>
+            <input id="enviar" type="submit" value="Enviar">
+        </div>
+        </div>
         </form>
 </body>
 </html>
