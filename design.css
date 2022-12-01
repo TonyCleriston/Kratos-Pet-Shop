@@ -11,28 +11,36 @@ nav {
     justify-content: center;
 }
 
-img {
+#yeah {
+    width: 100px;
+    height: 100px;
+    margin-left: 39%;
+    margin-top: 1%;
+}
+#bt {
     width: 50px;
-    height: 50px;
+    height: 50px; 
 }
  
 .botoes {
     width: 150px;
     height: 50px; 
     margin-right: 60px;
-    border-top: 1px solid rgb(81, 81, 82);
-    border-left: 1px solid rgb(81, 81, 82);
-    border-right:1px solid rgb(81, 81, 82) ;
+    border-top: 3px solid rgb(81, 81, 82);
+    border-left: 3px solid rgb(81, 81, 82);
+    border-right:3px solid rgb(81, 81, 82) ;
     border-radius: 10px;
     padding: 0.3%;
+    display: flex;
+    align-items: center;
     
 }
 
 a {
     width: 10px;
-    position: absolute;
+    
     height: 10px;
-    bottom: 555px;
+    margin-bottom: 5px;
     margin-left: 23px;
 }
 
@@ -41,9 +49,7 @@ a {
     
 }
 
-option {
-  
-}
+
 
 form {
     background-color: rgb(180, 180, 180);
@@ -56,10 +62,11 @@ form {
 
 .Titulo {
     width: 900px;
-    margin-left:20%;
+    margin-left:15%;
     font-size: 100px;
     margin-top: 3%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 1px rgb(255, 138, 138);  
 }
 
 #inf {
@@ -67,12 +74,143 @@ form {
     color: #fff;
     border: none;
     border-bottom: 2px solid #e1e1e1;
-    
-    background-color: transparent;
+    background-color: transparent;  
+    width: 39%; 
+    margin-left: 20px;
+}
+#inf1 {
+    outline: none;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #e1e1e1;
+    background-color: transparent;  
+    width: 60%; 
+    margin-left: 20px;
+}
+.caixa {
+   z-index: 2;
+   width: 500px;
+   height: 650px;
+   display: flex;
+   
+    justify-content: center;
  
-    
+    flex-direction: column;
+}
+input::placeholder {
+    color: rgb(194, 189, 189);
+  }
+.form{
+    width: 500px;
+    height: 650px;
+    background-color: rgb(110, 110, 110);
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-top: 5%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .linha {
-   
+ color: rgb(255, 136, 136);
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: larger;
+ padding-left: 10%;
 }
+.linha1 {
+    color: rgb(255, 136, 136);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    padding-top: 5%;
+    padding-left: 10%;
+   }
+   #porte {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    text-shadow: 1px 1px 1px rgb(126, 125, 125);  
+   }
+   .op{
+    margin-left: 8%;
+    color: rgb(255, 136, 136);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+   #cont{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(126, 125, 125);  
+    font-size: x-large;
+
+   }
+   .contato {
+    margin-left: 18%;
+    margin-top: 4%;
+   }
+   #holder {
+    margin-left: 3%;
+    width: 40%;
+    
+   }
+   #serv {
+    font-size: x-large;
+    text-shadow: 1px 1px 1px rgb(126, 125, 125); 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 18%;
+    width: 20%;
+    
+   }
+   #aba-tarefa{
+    width: 34.5%;
+    margin-left: 3.5%;
+   }
+   #enviar{
+    color: rgb(255, 136, 136);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    text-shadow: 1px 1px 1px rgb(126, 125, 125);
+    border-radius: 10px;
+    background-color: rgb(39, 38, 38);
+    margin-left: 30%;
+    margin-top: 5%;
+    width: 170px;
+    height: 40px;
+   }
+   .form::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: rgb(80, 83, 85);
+    border-radius: 20px;
+    
+}
+   .form::before{
+    content: '';
+   position: absolute;
+   
+    width: 150px;
+    height: 140%;
+    background: linear-gradient(rgb(255, 77, 77),rgb(252, 255, 66));
+    animation: animate 5s linear infinite;
+    
+}
+#enviar {
+    cursor: pointer;
+}
+@keyframes animate {
+    0% {
+transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
