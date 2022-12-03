@@ -6,10 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kratos Pet Shop</title>
     <link rel="stylesheet" href="design.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            background: white;
+            color: black;
+        }
+          
+        th,
+        td {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <nav>
-     <div class="botoes">
+     <div class="botoes" onclick="cadastro()">
         <img src="pawprint.png" id="bt">
         <a>Cadastrar</a>
      </div>
@@ -21,11 +33,12 @@
         <img src="group.png" id="bt">
         <a>Clientes</a>
      </div>
-     <div class="botoes"> 
+     <div class="botoes" onclick="horario()"> 
         <img src="clock.png" id="bt">
         <a>Horarios</a>
      </div>
     </nav>
+    <div class="telacadastro">
         <form>
             <div class="">
             <div class="Titulo">Cadastro de Usuario</div>
@@ -36,8 +49,8 @@
                 <img src="yeah.png" id="yeah">
              </div>
         <div class="linha1">
-            <label for="nome"><strong>Nome do animal:</strong></label>
-            <input type="text" placeholder="Insira o nome do animal" name="nome" id="inf">
+            <label for="nome"><strong>Nome do cliente:</strong></label>
+            <input type="text" placeholder="Insira o nome do cliente" name="nome" id="inf">
         </div>
             <br>
             <div class="linha">
@@ -89,10 +102,170 @@
                 <option value="TH">Tosa Higienica</option>
                 </select>
             </div> <br>
+            <div class="horario">
+                <label for="horario" id="hor"><strong>Horario:</strong></label>
+                <input name="horario" list="aba-contato" id="holder" placeholder="Horario de Frequencia">
+    
+                <datalist id="aba-contato">
+                    <option value="14:00">
+                        <option value="15:00">
+                            <option value="16:00">
+                                <option value="17:00">
+                                    <option value="18:00">
+                                        <option value="18:30">
+                                            <option value="19:00">
+                                                <option value="19:30">
+                                                    <option value="20:00">
+                                                        <option value="21:00">
+                </datalist>  
+            </div>  <br>
             <input id="enviar" type="submit" value="Enviar">
         </div>
         </div>
         </form>
+    </div>
+    <div class="telahorario">
+       
+        <div class="">
+                <div class="Titulo">Horários e Serviçõs</div>
+            </div>
+         <br>
+        <h2 align="center" style="color: rgb(255, 92, 92); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: xx-large; "><strong>
+            Dezembro 2022
+        </strong></h2>
+        <br />
+      
+        <table bgcolor="lightgrey" align="center" 
+            cellspacing="21" cellpadding="21">
+      
+      
+            <caption align="top">
+              
+            </caption>
+      
+          
+            <thead>
+                <tr>
+                  
+                    <th style="color: white; background: rgb(255, 121, 121);">
+                        Dom</th>
+                    <th style="color: white; background: rgb(255, 121, 121);">
+                        Seg</th>
+                    <th style="color: white; background:  rgb(255, 121, 121);">
+                        Ter</th>
+                    <th style="color: white; background: rgb(255, 121, 121);">
+                        Qua</th>
+                    <th style="color: white; background: rgb(255, 121, 121);">
+                        Qui</th>
+                    <th style="color: white; background: rgb(255, 121, 121);">
+                        Sex</th>
+                    <th style="color: white; background: rgb(255, 121, 121);">
+                        Sab</th>
+                </tr>
+            </thead>
+      
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </tbody>
+        </table>
+       <div class="date" style="display: flex; margin-left: 45%; margin-top: 4%; width: 20%;">
+        <input type="date" style="width: 150px; height: 30px;">
+        <img src="calendario.png">
+       </div>
+      <div class="editar" style="display: flex; width: 430px; height: 50px; background-color:white; margin-left: 34%; margin-top: 4px;border: 2px solid rgb(0, 0, 0);" >
+          <a style="color: black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-top: 15px;font-size: large; width: 70px;">Arquivo</a>
+          <a style="color: black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-top: 15px;font-size: large; width: 70px;">Imprimir</a>
+          <a style="color: black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-top: 15px;font-size: large; width: 70px;">Ajuda</a>
+      </div>
+      <div class="pets" style="display: flex; flex-direction: column; width: 430px; height: 400px; background-color:white; margin-left: 34%; margin-top: 4px;border: 2px solid rgb(0, 0, 0);">
+        <div style="display: flex; margin-top: 10%; width: 430px; height: 60px;">
+        <a style="color: black; font-size: x-large; padding-top: 10px; margin-left: 40px;"><strong>15:00</strong></a>
+        <a style="margin-left: 70px;width: 140px; height: 30px; border: 2px solid rgb(0, 0, 0); border-radius: 30px;  padding-left: 60px; padding-top: 13px;"><strong>Kratos Dog</strong></a>
+        <img src="clock.png" style="width: 40px;height: 40px; margin-left: 20px; margin-top: 2px;"> 
+    </div>
+    <div style="display: flex; margin-top: 1%; width: 430px; height: 60px;">
+        <a style="color: black; font-size: x-large; padding-top: 10px; margin-left: 40px;"><strong>16:00</strong></a>
+        <a style="margin-left: 70px;width: 140px; height: 30px; border: 2px solid rgb(0, 0, 0); border-radius: 30px;  padding-left: 60px; padding-top: 13px;"><strong>Disponível</strong></a>
+        <img src="clock.png" style="width: 40px;height: 40px; margin-left: 20px; margin-top: 2px;"> 
+      </div>
+      <div style="display: flex; margin-top: 1%; width: 430px; height: 60px;">
+        <a style="color: black; font-size: x-large; padding-top: 10px; margin-left: 40px;"><strong>17:00</strong></a>
+        <a style="margin-left: 70px;width: 160px; height: 30px; border: 2px solid rgb(0, 0, 0); border-radius: 30px;  padding-left: 40px; padding-top: 13px;"><strong>Doberman Alado</strong></a>
+        <img src="clock.png" style="width: 40px;height: 40px; margin-left: 20px; margin-top: 2px;"> 
+      </div>
+      <div style="display: flex; margin-top: 1%; width: 430px; height: 60px;">
+        <a style="color: black; font-size: x-large; padding-top: 10px; margin-left: 40px;"><strong>18:00</strong></a>
+        <a style="margin-left: 70px;width: 120px; height: 30px; border: 2px solid rgb(0, 0, 0); border-radius: 30px;  padding-left: 80px; padding-top: 13px;"><strong>Zeus</strong></a>
+        <img src="clock.png" style="width: 40px;height: 40px; margin-left: 20px; margin-top: 2px;"> 
+      </div>
+      <div class="icones" style="display: flex; width: 430; height: 60px; margin-top: 20px; justify-content: space-around;">
+        <img src="1004759.png" width="40px" height="40px">
+        <img src="64673.png" width="40px" height="40px">
+        <img src="73547.png" width="40px" height="40px">
+        <img src="54324.png" width="40px" height="40px">
+      </div>
+      <div class="acao" style="display: flex;">
+         <a style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large; width: 90px;"><strong>Adcionar</strong></a>
+         <a style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large; width: 90px;"><strong>Pesquisar</strong></a>
+         <a style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large; width: 90px; padding-left: 14px;"><strong>Editar</strong></a>
+         <a style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large; width: 90px;"><strong>Excluir</strong></a>
+      </div>
+    </div>
+        <script src="codigo.js"></script>
 </body>
 </html>
 
