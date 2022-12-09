@@ -64,7 +64,7 @@ form {
     background-color: rgb(90, 90, 90);
    
  position: absolute;
-    height: 1400px;
+    height: 1100px;
     width: 100%;
     
 }
@@ -123,14 +123,14 @@ input::placeholder {
   .telacadastro{
     position: absolute;
     width: 100%;
-    height: 1400px;
+    height: 1100px;
   }
   .telahorario{
     display: none;
     flex-direction: column;
     position: absolute;
     width: 100%;
-    height: 1400px;
+    height: 1600px;
     background-color: rgb(90, 90, 90);
 }
 table{
